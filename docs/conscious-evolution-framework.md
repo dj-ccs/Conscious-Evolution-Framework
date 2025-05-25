@@ -226,7 +226,7 @@ The CEF incentivizes deep engagement with these foundational arts through its **
 
 ### 6.3 DAI Modules for Educational Orchestration & Wiki-Centric Learning
 
-The educational pillar is supported by DAI modules that facilitate learning pathways, skill validation, and the application of knowledge, often centered around the Knowledge Commons wiki:
+The educational pillar is supported by DAI modules that facilitate learning pathways, skill validation, and the application of knowledge, often centered around the Knowledge Commons wiki (See cultural-creative-framework/trivium-quadrivium/ for curricula frameworks and dai-infrastructure/core-modules/educational-coordination/ for DAI modules supporting Trivium-Quadrivium and wiki-centric learning):
 
 *   **`trivium-mastery.dapi.ts` & `quadrivium-mastery.dapi.ts`**:
     *   Provide access to curated learning resources (many hosted on or linked from the wiki), connect learners with mentors, and manage platforms for submitting work or undergoing assessments for tokenized recognition.
@@ -675,7 +675,19 @@ The CEF toolkit empowers stakeholders to implement the framework, with the wiki 
 ### 14.2 Technical Specifications
 - **Wiki Deployment:** Use `wiki-frontend.html`, `WikiUpdate.js`, `wiki-verification.dapi.ts`.
 - **DAI Templates:** `knowledge-commons.template.ts`, `regenerative-learning.template.ts`.
-- **Tokenomics:** SCI-EXPLORER: 100 tokens/edit; SYNTHESIS: 500 for integrative entries. *(We may want to broaden tokenomics examples here to reflect all 12 tokens, but the wiki-specific ones are good)*
+- **Tokenomics:**
+- - SCI-EXPLORER: 100 tokens for a verified wiki edit via wiki-verification.dapi.ts.
+- - SCI-REGEN: 200 tokens for publishing regenerative research via open-science-dlt-publication.dapi.ts.
+- - SCI-GUARDIAN: 300 tokens for curating a scientific wiki section over 6 months.
+- - CULTURAL-EXPLORER: 150 tokens for documenting a local story on the wiki via cultural-preservation.dapi.ts.
+- - CULTURAL-REGEN: 250 tokens for a community-healing narrative submitted via storytelling-impact.dapi.ts.
+- - CULTURAL-GUARDIAN: 400 tokens for preserving traditional knowledge on the wiki with traditional-knowledge.dapi.ts.
+- - TRIVIUM-MASTERY: 100 tokens for a peer-validated wiki article demonstrating rhetorical skill.
+- - QUADRIVIUM-MASTERY: 150 tokens for a wiki diagram illustrating geometric principles.
+- - RENAISSANCE-SYNTHESIS: 500 tokens for an integrative wiki entry combining science and culture.
+- - EXPLORER: 50 tokens for submitting validated ESV data via ecosystem-monitoring.dapi.ts.
+- - REGEN: 300 tokens for verified ecosystem improvement documented on the wiki.
+- - GUARDIAN: 350 tokens for 1 year of ecosystem stewardship with wiki case study.
 
 ### 14.3 Community Support
 - **Forums:** `community/forums/` for collaboration.
@@ -707,26 +719,49 @@ The wiki ensures your contributions are immutable, verified, and impactful, buil
 
 ## 16. Advanced Query Templates for Deep Exploration (From original LLM Super-Prompt)
 
-To facilitate deeper engagement with the multifaceted Conscious Evolution Framework, especially for AI-assisted exploration or structured human inquiry, the following query templates can be used. These are designed to probe the interconnections between different pillars and DAI modules of the Civilization Operating System.
+To facilitate deep engagement with the Conscious Evolution Framework (CEF), the following query templates are designed for AI-assisted exploration or structured human inquiry. These templates probe the interconnections between pillars (Scientific, Cultural, Educational, Ecosystem), Decentralized Autonomous Infrastructure (DAI) modules, the twelve-token EHDC ecosystem, and the Knowledge Commons wiki, enabling users to design solutions, model impacts, and contribute to the Civilization Operating System. They are extensible and can be adapted for specific contexts.
 
-*(Here, we will insert the **full list of Advanced Query Templates from Section 12 of your original LLM Super-Prompt document**. I'll ensure the examples I provided in my earlier draft of this section are harmonized or replaced by your more comprehensive list, ensuring they reflect the full scope of the Civilization OS – scientific, cultural, educational, ecosystem, DAI, and wiki interactions.)*
+For an evolving list and usage guide, see `action/query-templates.md`.
 
-**Example (placeholder for your full list):**
+### 16.1 Partnership Development & Ecosystem Integration
+- *"Design a DAI composition using `ctm-data-feed.ts` and `ecosystem-monitoring.dapi.ts` to enhance partnership with [specific ecosystem element, e.g., a coral reef], integrating ESV data for EXPLORER token rewards, and documenting regenerative outcomes on the Knowledge Commons wiki for REGEN tokens."*
+- *"Develop a Consciousness Agriculture program for [context/crop, e.g., regenerative rice farming], detailing ESV metrics, CTM integration via `ctm-data-feed.ts`, and a research plan for `open-science-dlt-publication.dapi.ts` to earn SCI-REGEN tokens, with cultural narratives submitted to the wiki via `cultural-preservation.dapi.ts` for CULTURAL-EXPLORER tokens."*
+- *"Propose a community-driven ecosystem restoration project using `consensus-formation.dapi.ts` for governance, rewarding participants with EXPLORER and REGEN tokens, and archiving best practices on the wiki with `wiki-verification.dapi.ts` for GUARDIAN tokens."*
 
-### Partnership Development & Ecosystem Integration
-*   *"How can I develop partnership capabilities with [specific ecosystem element, e.g., a local watershed] using CTM DAI modules and incentivize it with EXPLORER/REGEN tokens, with results documented on the Knowledge Commons wiki?"*
-*   *"Design a 'Consciousness Agriculture' program for [context/crop], detailing its ESV metrics, CTM integration, potential for SCI-REGEN token generation through `open-science-dlt` verified studies published to the wiki, and CULTURAL-EXPLORER tokens for documenting the process."*
+### 16.2 Traditional Knowledge & Wiki Integration
+- *"Create a protocol for integrating [specific indigenous practice, e.g., Aboriginal fire management] into the CEF using `cultural-preservation.dapi.ts`, ensuring cultural sovereignty via Solid Pods, validating ecological impacts with `open-science-dlt` for SCI-EXPLORER tokens, and documenting on the wiki with `wiki-curation.dapi.ts` for CULTURAL-GUARDIAN tokens."*
+- *"Design a DAI module to cross-validate [traditional knowledge, e.g., Polynesian wayfinding] with CTM insights via `ctm-data-feed.ts`, submitting findings to `peer-review.dapi.ts` for SCI-REGEN tokens, and creating a wiki entry with `wiki-verification.dapi.ts` for RENAISSANCE-SYNTHESIS tokens."*
+- *"Model a collaboration between indigenous elders and scientists to document [cultural practice, e.g., Andean seed saving] on the wiki, using `traditional-knowledge.dapi.ts` for consent, earning CULTURAL-GUARDIAN tokens, and linking to `open-science-dlt` studies for SCI-EXPLORER tokens."*
 
-### Traditional Knowledge & DAI/Wiki Integration
-*   *"How can CTM DAI modules learn from [specific indigenous practice, e.g., Nharangga seasonal calendar], cross-validate it with `open-science-dlt` research, ensuring cultural sovereignty via `Traditional Knowledge` dAPIs and CULTURAL-GUARDIAN token rewards, with all protocols and findings documented on the wiki?"*
+### 16.3 Economic Transition & Tokenomics Modeling
+- *"Simulate the economic impact of the Seeds of Change 81/19 model for [community, e.g., a local pottery cooperative], tracking CULTURAL-EXPLORER token generation via `creative-contribution.dapi.ts`, Community Cultural Pool funding, and wiki documentation of cultural outputs with `wiki-curation.dapi.ts` for CULTURAL-REGEN tokens."*
+- *"Develop a value assessment system for a wiki synthesis article combining [scientific data, e.g., soil health], [cultural narrative, e.g., indigenous farming], and [educational content, e.g., Trivium-based curriculum], assigning SCI-EXPLORER, CULTURAL-EXPLORER, and RENAISSANCE-SYNTHESIS tokens via `CrossDomainSynthesis.dapi.ts`."*
+- *"Model a bioregional economy using all 12 EHDC tokens, detailing DAI modules (e.g., `token-engine.dapi.ts`, `ecosystem-monitoring.dapi.ts`), token flows for wiki contributions (e.g., SCI-GUARDIAN for wiki curation), and cross-domain bonuses for integrative projects."*
 
-### Economic Transition & Complete EHDC Tokenomics (Including Wiki Incentives)
-*   *"Model the economic impact of the 'Seeds of Change' 81/19 distribution on a local artisan community, tracking CULTURAL-EXPLORER generation, the funding of the Community Cultural Pool, and how their creative processes are documented and shared via the wiki."*
-*   *"Develop a contextual value assessment system for a [wiki synthesis article] considering its scientific rigor (SCI-EXPLORER), cultural impact (CULTURAL-EXPLORER), educational depth (RENAISSANCE-SYNTHESIS), and regenerative potential (REGEN), and how this translates to combined token rewards."*
+### 16.4 Scientific Advancement & Open Science DLT
+- *"Propose a research study using `open-science-dlt-publication.dapi.ts` to validate [regenerative practice, e.g., biochar application], earning SCI-EXPLORER tokens, with peer reviews via `peer-review.dapi.ts` for additional tokens, and a wiki summary via `wiki-verification.dapi.ts` for SCI-REGEN tokens."*
+- *"Design an AI-assisted meta-analysis using `scientific-consensus.dapi.ts` to synthesize [topic, e.g., biodiversity restoration], submitting results to the wiki for RENAISSANCE-SYNTHESIS tokens, and integrating CTM insights via `ctm-data-feed.ts` for EXPLORER tokens."*
+- *"Create a citizen science project for [data collection, e.g., urban tree health], using `data-accessibility.dapi.ts` for open datasets, rewarding EXPLORER tokens, and documenting findings on the wiki with `wiki-education.dapi.ts` for TRIVIUM-MASTERY tokens."*
 
-*(Please provide your full list of templates from the original document to insert here.)*
+### 16.5 Cultural Renaissance & Creative Expression
+- *"Develop a regenerative media project using `media-integration.dapi.ts` for [context, e.g., a documentary on urban farming], applying the 81/19 model for CULTURAL-EXPLORER tokens, and archiving on the wiki with `storytelling-impact.dapi.ts` for CULTURAL-REGEN tokens."*
+- *"Propose a cultural festival celebrating [theme, e.g., bioregional heritage], using `cultural-preservation.dapi.ts` to document traditions for CULTURAL-GUARDIAN tokens, and creating wiki content with `wiki-curation.dapi.ts` for RENAISSANCE-SYNTHESIS tokens."*
+- *"Model a storytelling initiative for [community, e.g., refugee youth], using `storytelling-impact.dapi.ts` to assess impact for CULTURAL-REGEN tokens, and integrating scientific insights via `open-science-dlt` for SCI-EXPLORER tokens, with outputs on the wiki."*
 
-(See `action/query-templates.md` for an evolving list and usage guide).
+### 16.6 Educational Revolution & Holistic Learning
+- *"Design a Trivium-based curriculum using `trivium-mastery.dapi.ts` for [context, e.g., rural schools], rewarding TRIVIUM-MASTERY tokens, and creating wiki-based learning modules with `wiki-education.dapi.ts` for RENAISSANCE-SYNTHESIS tokens."*
+- *"Propose a Quadrivium project for [application, e.g., designing a permaculture garden], using `quadrivium-mastery.dapi.ts` for QUADRIVIUM-MASTERY tokens, integrating ESV data via `ecosystem-monitoring.dapi.ts` for EXPLORER tokens, and documenting on the wiki."*
+- *"Model a mentorship program for Renaissance Individuals using `renaissance-development.dapi.ts`, rewarding RENAISSANCE-SYNTHESIS tokens for integrative wiki contributions, and linking to cultural outputs via `cultural-preservation.dapi.ts` for CULTURAL-GUARDIAN tokens."*
+
+### 16.7 DAI Design & System Integration
+- *"Develop a new DAI module for [function, e.g., wiki-scalability.dapi.ts], integrating with `open-science-dlt` for verification, rewarding SCI-GUARDIAN tokens, and documenting specifications on the wiki for RENAISSANCE-SYNTHESIS tokens."*
+- *"Propose a DAI composition for [community need, e.g., local governance], combining `consensus-formation.dapi.ts` and `token-engine.dapi.ts`, modeling token flows for all 12 EHDC tokens, and archiving outcomes on the wiki."*
+- *"Design an interoperability protocol for [external system, e.g., blockchain network] to integrate with DAI via `dapi-standard.ts`, ensuring wiki compatibility with `knowledge-commons-sync.ts`, and rewarding SCI-EXPLORER tokens for technical contributions."*
+
+### 16.8 Neo-Kardashev Scale & Cosmic Citizenship
+- *"Model a pathway to Type I-Bio status for [region, e.g., a watershed], using DAI modules like `ecosystem-monitoring.dapi.ts` and `open-science-dlt`, tracking metrics via `civilization-metrics.dapi.ts`, and documenting progress on the wiki for REGEN and SCI-GUARDIAN tokens."*
+- *"Propose a cosmic citizenship training program using `renaissance-development.dapi.ts`, integrating Quadrivium principles for QUADRIVIUM-MASTERY tokens, and creating wiki content on astrobiology with `wiki-verification.dapi.ts` for RENAISSANCE-SYNTHESIS tokens."*
+- *"Design a speculative DAI module for [interplanetary function, e.g., off-world ESV monitoring], integrating with `ctm-data-feed.ts`, rewarding EXPLORER tokens, and documenting ethical considerations on the wiki for SCI-REGEN tokens."*
 
 ## 17. Conclusion: The Great Partnership for a Regenerative Future (From original LLM Super-Prompt)
 
