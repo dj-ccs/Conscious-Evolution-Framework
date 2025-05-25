@@ -1,4 +1,313 @@
 # Conscious Evolution Framework Repository Structure
+```
+Conscious-Evolution-Framework/
+| - README.md
+| - LICENSE
+| - CONTRIBUTING.md
+| - CODE_OF_CONDUCT.md
+| - .gitignore
+| - knowledge-commons/
+|   | - README.md
+|   | - platform/
+|   |   | - mediawiki-setup/
+|   |   |   | - LocalSettings.php.template
+|   |   |   | - extensions/
+|   |   |   |   | - ESVDataExtension/
+|   |   |   |   |   | - ESVDataExtension.php
+|   |   |   |   |   | - includes/
+|   |   |   |   |   |   | - ESVParser.php
+|   |   |   |   |   |   | - DLTConnector.php
+|   |   |   |   |   |   | - DataValidator.php
+|   |   |   |   |   | - templates/
+|   |   |   |   |   |   | - ESVTemplate.php
+|   |   |   |   |   |   | - DataCitationTemplate.php
+|   |   |   |   |   | - resources/
+|   |   |   |   |   |   | - ext.esvdata.css
+|   |   |   |   |   |   | - ext.esvdata.js
+|   |   |   |   | - BrotherNatureIntegration/
+|   |   |   |   |   | - BNIntegration.php
+|   |   |   |   |   | - includes/
+|   |   |   |   |   |   | - ForumParser.php
+|   |   |   |   |   |   | - DiscussionLinker.php
+|   |   |   |   |   |   | - ConsensusTracker.php
+|   |   |   |   |   | - templates/
+|   |   |   |   |   |   | - ForumCitationTemplate.php
+|   |   |   |   |   |   | - ConsensusTemplate.php
+|   |   |   |   | - TemporalCitation/
+|   |   |   |   |   | - TemporalCitation.php
+|   |   |   |   |   | - includes/
+|   |   |   |   |   |   | - TimelineGenerator.php
+|   |   |   |   |   |   | - VersionTracker.php
+|   |   |   |   |   |   | - GeospatialLinker.php
+|   |   |   |   |   | - templates/
+|   |   |   |   |   |   | - TimelineTemplate.php
+|   |   |   |   |   |   | - EvolutionTemplate.php
+|   |   |   |   | - TraditionalKnowledge/
+|   |   |   |   |   | - TKIntegration.php
+|   |   |   |   |   | - includes/
+|   |   |   |   |   |   | - TKLabelsHandler.php
+|   |   |   |   |   |   | - CulturalProtocols.php
+|   |   |   |   |   |   | - ElderVerification.php
+|   |   |   |   |   | - templates/
+|   |   |   |   |   |   | - TKTemplate.php
+|   |   |   |   |   |   | - CulturalAttributionTemplate.php
+|   |   |   | - skins/
+|   |   |   |   | - CEFVector/
+|   |   |   |   |   | - skin.json
+|   |   |   |   |   | - includes/
+|   |   |   |   |   |   | - SkinCEFVector.php
+|   |   |   |   |   | - resources/
+|   |   |   |   |   |   | - main.css
+|   |   |   |   |   |   | - cef-branding.css
+|   |   |   | - deployment/
+|   |   |   |   | - docker-compose.yml
+|   |   |   |   | - kubernetes/
+|   |   |   |   |   | - mediawiki-deployment.yaml
+|   |   |   |   |   | - mysql-deployment.yaml
+|   |   |   |   |   | - elasticsearch-deployment.yaml
+|   |   |   |   | - nginx/
+|   |   |   |   |   | - mediawiki.conf
+|   |   |   | - configuration/
+|   |   |   |   | - cef-namespace-setup.sql
+|   |   |   |   | - user-groups.sql
+|   |   |   |   | - extension-configs/
+|   |   |   |   |   | - esv-data-config.json
+|   |   |   |   |   | - citation-formats.json
+|   | - content-structure/
+|   |   | - namespace-design.md
+|   |   | - category-taxonomy.md
+|   |   | - template-library.md
+|   |   | - citation-standards.md
+|   |   | - quality-protocols.md
+|   | - integration-apis/
+|   |   | - brother-nature-api/
+|   |   |   | - forum-sync.js
+|   |   |   | - user-auth.js
+|   |   |   | - consensus-tracker.js
+|   |   | - ehdc-api/
+|   |   |   | - esv-data-sync.js
+|   |   |   | - token-metrics.js
+|   |   |   | - governance-sync.js
+|   |   | - ctm-api/
+|   |   |   | - temporal-data.js
+|   |   |   | - pattern-insights.js
+|   |   |   | - narrative-sync.js
+|   |   | - traditional-knowledge-api/
+|   |   |   | - tk-verification.js
+|   |   |   | - elder-council.js
+|   |   |   | - cultural-protocols.js
+|   | - governance/
+|   |   | - editorial-board.md
+|   |   | - consensus-protocols.md
+|   |   | - dispute-resolution.md
+|   |   | - version-control.md
+|   |   | - cultural-protocols.md
+|   | - quality-assurance/
+|   |   | - peer-review.md
+|   |   | - community-validation.md
+|   |   | - ai-audit-tools.md
+|   |   | - traditional-verification.md
+|   |   | - source-verification.md
+|   | - search-discovery/
+|   |   | - semantic-search.md
+|   |   | - temporal-queries.md
+|   |   | - spatial-knowledge.md
+|   |   | - relationship-mapping.md
+|   |   | - ai-recommendations.md
+|   | - examples/
+|   |   | - sample-esv-page.md
+|   |   | - sample-discussion-integration.md
+|   |   | - sample-temporal-evolution.md
+|   |   | - sample-traditional-knowledge.md
+|   |   | - sample-multi-source-synthesis.md
+| - assets/
+|   | - images/
+|   |   | - framework-overview.png
+|   |   | - ehdc-flow-diagram.png
+|   |   | - ctm-architecture.png
+|   |   | - esv-components.svg
+|   |   | - knowledge-commons-architecture.png
+|   | - videos/
+|   |   | - knowledge-commons-demo.mp4
+|   | - diagrams/
+|   |   | - system-architecture.mermaid
+|   |   | - token-flow.mermaid
+|   |   | - knowledge-flow.mermaid
+| - docs/
+|   | - conscious-evolution-framework.md
+|   | - glossary.md
+|   | - quickstart.md
+|   | - faq.md
+|   | - roadmap.md
+|   | - knowledge-commons-guide.md
+|   | - README.md
+| - research/
+|   | - biodiversity-climate-regulation.md
+|   | - climate-stability-biology.md
+|   | - microbial-intelligence.md
+|   | - plant-microbiome-inheritance.md
+|   | - soil-carbon-storage.md
+|   | - ecosystem-based-currency.md
+|   | - value-evolution.md
+|   | - fertility-climate-feedback.md
+|   | - knowledge-evolution-study.md
+|   | - citations.bib
+|   | - README.md
+| - technology/
+|   | - ctm/
+|   |   | - README.md
+|   |   | - architecture.md
+|   |   | - temporal-processing.md
+|   |   | - self-narratives.md
+|   |   | - knowledge-integration.md
+|   |   | - src/
+|   |   |   | - core/
+|   |   |   | - temporal/
+|   |   |   | - narratives/
+|   |   |   | - knowledge-commons/
+|   |   |   |   | - wiki-parser.js
+|   |   |   |   | - consensus-analyzer.js
+|   |   |   |   | - knowledge-synthesis.js
+|   |   |   | - examples/
+|   | - polydimensional-ai/
+|   |   | - README.md
+|   |   | - theory.md
+|   |   | - implementation.md
+|   |   | - quantum-fungal-integration.md
+|   |   | - src/
+|   |   |   | - dimensions/
+|   |   |   | - consciousness/
+|   |   |   | - quantum-fungal/
+|   | - qsaat/
+|   |   | - README.md
+|   |   | - sensors.md
+|   |   | - analysis-protocols.md
+|   |   | - knowledge-commons-integration.md
+|   |   | - specs/
+|   |   |   | - hardware/
+|   |   |   | - software/
+|   |   |   | - quantum-detection/
+|   | - data-sovereignty/
+|   |   | - README.md
+|   |   | - solid-pods/
+|   |   | - privacy-protocols/
+|   |   | - knowledge-sovereignty.md
+|   |   | - examples/
+|   | - blockchain/
+|   |   | - stellar/
+|   |   | - iota/
+|   | - README.md
+| - ehdc/
+|   | - README.md
+|   | - tokenomics/
+|   |   | - explorer-token.md
+|   |   | - regen-token.md
+|   |   | - guardian-token.md
+|   |   | - value-assessment.md
+|   |   | - knowledge-commons-rewards.md
+|   |   | - README.md
+|   | - platforms/
+|   |   | - brother-nature/
+|   |   |   | - README.md
+|   |   |   | - core/
+|   |   |   |   | - src/
+|   |   |   |   |   | - services/
+|   |   |   |   |   |   | - knowledge-commons.service.ts
+|   |   |   |   |   |   | - consensus-tracking.service.ts
+|   |   |   |   |   |   | - wiki-integration.service.ts
+|   |   |   |   |   | - models/
+|   |   |   |   |   |   | - knowledge.model.ts
+|   |   |   |   |   |   | - consensus.model.ts
+|   |   |   |   | - knowledge-commons/
+|   |   |   |   |   | - wiki-sync.ts
+|   |   |   |   |   | - discussion-parser.ts
+|   |   |   |   |   | - consensus-engine.ts
+|   |   |   |   | - deployment/
+|   |   | - README.md
+| - implementation/
+|   | - longford-property-trial/
+|   |   | - knowledge-documentation.md
+|   |   | - quantum-fungal-protocols.md
+|   | - deniliquin-hemp/
+|   |   | - knowledge-commons-integration.md
+|   |   | - temporal-optimization-docs.md
+|   | - README.md
+| - consciousness/
+|   | - mythological-framework.md
+|   | - quantum-fungal-consciousness.md
+|   | - knowledge-commons-practices.md
+|   | - README.md
+| - community/
+|   | - traditional-knowledge/
+|   |   | - knowledge-commons-protocols.md
+|   |   | - elder-council-integration.md
+|   |   | - README.md
+|   | - knowledge-commons-governance/
+|   |   | - editorial-councils.md
+|   |   | - consensus-formation.md
+|   |   | - quality-assurance.md
+|   |   | - cultural-protocols.md
+|   | - README.md
+| - neo-kardashev/
+|   | - knowledge-civilization-markers.md
+|   | - README.md
+| - entry-points/
+|   | - knowledge-contributors.md
+|   | - traditional-knowledge-holders.md
+|   | - README.md
+| - media/
+|   | - seeds-of-change/
+|   |   | - knowledge-commons-integration.md
+|   |   | - README.md
+|   | - README.md
+| - advanced-concepts/
+|   | - quantum-fungal-coherence.md
+|   | - knowledge-evolution-dynamics.md
+|   | - README.md
+| - resources/
+|   | - knowledge-commons/
+|   |   | - setup-guides/
+|   |   | - contribution-templates/
+|   |   | - citation-tools/
+|   |   | - quality-checklists/
+|   | - README.md   | - README.md
+| - examples/
+|   | - knowledge-commons-pages/
+|   |   | - quantum-fungal-research-synthesis.md
+|   |   | - community-consensus-example.md
+|   |   | - traditional-knowledge-integration-example.md
+|   |   | - multi-source-knowledge-synthesis.md
+|   | - README.md
+| - action/
+|   | - knowledge-commons-participation.md
+|   | - README.md
+| - tests/
+|   | - knowledge-commons/
+|   |   | - wiki-integration/
+|   |   | - consensus-tracking/
+|   |   | - quality-validation/
+|   | - README.md
+| - tools/
+|   | - knowledge-commons/
+|   |   | - wiki-setup.sh
+|   |   | - content-migration.py
+|   |   | - citation-validator.js
+|   |   | - consensus-analyzer.py
+|   | - README.md
+| - .github/
+|   | - workflows/
+|   |   | - knowledge-commons-sync.yml
+|   |   | - consensus-validation.yml
+|   |   | - quality-assurance.yml
+|   | - ISSUE_TEMPLATE/
+|   |   | - knowledge_contribution.md
+|   |   | - consensus_challenge.md
+|   |   | - traditional_knowledge_integration.md
+|   | - PULL_REQUEST_TEMPLATE.md
+```
+
+OLD: 
+```
 Conscious-Evolution-Framework/
 ├── README.md                    # Framework overview, navigation, licensing, and links
 ├── LICENSE                      # MIT license for code
@@ -330,6 +639,7 @@ Conscious-Evolution-Framework/
     │   └── research_proposal.md
     ├── PULL_REQUEST_TEMPLATE.md # Pull request template
     └── FUNDING.yml              # Funding information 
+```
 
 Repository Structure Notes
 Directory Purposes:
