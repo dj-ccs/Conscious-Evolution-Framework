@@ -210,6 +210,31 @@ Comprehensive protection across all system levels:
 - **Network Resilience**: Distributed validators, DDoS mitigation
 - **AI Hardening**: Adversarial training, bias audits, explainable outputs
 
+## 3.5 Knowledge Commons: Collective Intelligence Layer
+
+### The Living Knowledge System
+The Knowledge Commons represents humanity's transition from information hoarding to **collective intelligence development**. Built on WikiMedia architecture with custom extensions, it creates a **living, breathing knowledge organism** that grows through community contributions while maintaining rigorous quality standards.
+
+### Multi-Source Truth Architecture
+- **Forum Discussions**: Real-time integration with Brother Nature platform discussions
+- **ESV Data**: Direct citation of EHDC ecosystem state vector measurements
+- **Traditional Knowledge**: Respectful integration of indigenous wisdom with proper attribution
+- **Scientific Research**: Peer-reviewed research integration with temporal tracking
+- **AI Insights**: CTM-generated patterns and narratives as citable sources
+
+### Temporal Knowledge Evolution
+Knowledge Commons tracks how understanding evolves over time:
+- **Version Control**: Every edit creates timestamped knowledge evolution record
+- **Consensus Formation**: Track how community understanding reaches consensus
+- **Paradigm Shifts**: Document revolutionary insights and their integration process
+- **Predictive Knowledge**: CTM-generated insights validated through community verification
+
+### Integration with EHDC Economics
+- **EXPLORER Tokens**: Premium rewards for high-quality Knowledge Commons contributions
+- **Knowledge Quality Multipliers**: Well-sourced, well-integrated knowledge receives higher token values
+- **Consensus Building Rewards**: Recognition for facilitating community knowledge synthesis
+- **Traditional Knowledge Stewardship**: Special recognition for respectful TK integration
+
 ## 4. The Deniliquin Hemp Initiative: Primary Implementation Prototype
 
 ### 4.1 Integrated Value Chain Model
