@@ -1,8 +1,6 @@
 # 🌱 Unified Conscious Evolution Framework (UCF): A Complete Civilization Operating System
 
-**Welcome to the Unified Conscious Evolution Framework—a synthesis of visionary insight, verifiable science, vibrant culture, holistic education, deep ecosystem partnership, and ethical technology. This repository serves as the open-source blueprint for humanity's next operating system: a regenerative civilization.**
-
-Inspired by the call to move beyond extractive paradigms, as articulated by thinkers like Ali Bin Shahid in "Blueprints Buried," the UCF provides the practical architecture to co-create a future rooted in trust, care, ecological wisdom, and the full expression of human potential. It's a living library, an action toolkit, and a collaborative frontier for building a world that thrives by enhancing life, preparing humanity for conscious cosmic stewardship.
+**Welcome to the Unified Conscious Evolution Framework - providing the practical architecture to co-create a future rooted in trust, care, ecological wisdom, and the full expression of human potential. It's a living library, an action toolkit, and a collaborative frontier for building a world that thrives by enhancing life, preparing humanity for conscious cosmic stewardship.
 
 ---
 
